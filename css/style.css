@@ -1,0 +1,33 @@
+/* カスタムスタイルの追加 */
+.carousel-container {
+    margin-top: 80px; /* navbarの高さに合わせて調整 */
+}
+
+.icon{
+    border-radius: 90px;
+}
+
+.nav-tabs .nav-link {
+    white-space: nowrap; /* テキストが折り返されないようにする */
+    overflow: hidden; /* オーバーフローした部分を隠す */
+    text-overflow: ellipsis; /* オーバーフローした部分を省略記号で表示する */
+}
+
+@media (max-width: 991.98px) {
+    .carousel-container {
+        margin-top: 76px; /* モバイルビューの場合のnavbarの高さに合わせて調整 */
+    }
+}
+
+/* タブが2行になるのを防ぐスタイル */
+@media (max-width: 767.98px) {
+    .nav-tabs {
+        flex-wrap: nowrap;
+    }
+    .nav-item {
+        flex: 0 0 auto;
+        width: 25%; /* 4つのタブが一行に収まるように調整 */
+    }
+}
+
+
